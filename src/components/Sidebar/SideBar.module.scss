@@ -1,0 +1,92 @@
+.SideBar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    animation-name: slideInRight;
+    animation-duration: 0.8s;
+
+    .SideBar__Exit {
+        background-color: var(--darkTone-Color);
+        opacity: 0.3;
+    }
+
+    .SideBar__Detail {
+        position: relative;
+        z-index: 1;
+        background-color: var(--grayTone-Color);
+        overflow: hidden;
+
+        .SideBar__Header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 60px;
+            color: var(--lightTone-Color);
+            font-size: 2.5rem;
+            // border-bottom: 1px solid var(--lightTone-Color);
+            background-color: var(--darkTone-Color);
+
+            .SideBar__Header--Icon-Close {
+                i {
+                    font-size: 3rem;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.5);
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+
+        .SideBar__Content {
+            padding: 1rem;
+            color: var(--lightTone-Color);
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 1.5;
+            text-align: center;
+            border-bottom: 1px solid var(--darkTone-Color);
+            animation-name: slideInRight;
+            animation-duration: 1.4s;
+
+            .SideBar__Content--Icon {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 10px;
+            }
+
+            .SideBar__Content--Name {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 20px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: all 0.5s ease-in-out;
+                background-color: var(--lightTone-Color);
+                color: var(--darkTone-Color);
+            }
+        }
+    }
+}
+
+
+// ====================Animation=====================
+@keyframes slideInRight {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
