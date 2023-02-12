@@ -31,7 +31,7 @@ const Experience = () => {
           {dataExp.map((item, index) => {
             return (
               <div className={`${cx("Exp__Content--Item")} ${"row"}`} key={index}>
-                <div className={`${cx("Exp__Content--Item--Header")} ${"col l-4 m-4 c-4"}`}>
+                <div className={`${cx("Exp__Content--Item--Header")} ${"col l-4 m-4 c-11"}`}>
                   <div className={`${cx("Exp__Content--Item--Element")} ${"row"}`}>
                     <h3>Dự Án:</h3>{item.projectName}
                   </div>
@@ -48,7 +48,7 @@ const Experience = () => {
                     <h3>{item.company}</h3>
                   </div>
                 </div>
-                <div className={`${cx("Exp__Content--Item--Demo")} ${"col l-7 m-7 c-7"}`}>
+                <div className={`${cx("Exp__Content--Item--Demo")} ${"col l-7 m-7 c-11"}`}>
                   <div className={`${cx("Exp__Content--Item--Demo-Link")} ${"row"}`}>
                     {
                       item.projectDemo.endsWith(".mp4") ? <video src={item.projectDemo} controls autoPlay></video> : <img src={item.projectDemo} alt="image" />

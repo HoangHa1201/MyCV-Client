@@ -89,6 +89,12 @@
                         font-size: 4.5rem;
                     }
                 }
+                @media (max-width: 465px) {
+                    .headerContent__text--major {
+                        font-size: 4rem;
+                    }
+                }
+                
             }
 
             .headerContent__text--third {
