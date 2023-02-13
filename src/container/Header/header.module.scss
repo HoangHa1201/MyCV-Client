@@ -169,7 +169,7 @@
             display: flex;
             justify-content: flex-end;
             position: fixed;
-            top: 300px;
+            top: 60px;
             right: 0;
             z-index: 5;
             animation-name: fadeInLeftBig;
@@ -194,8 +194,8 @@
                 }
             }
 
-            .SideBar__Menu {
-                
+            @media (max-width: 800px) {
+                top: 300px;
             }
         }
     }
