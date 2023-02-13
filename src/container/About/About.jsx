@@ -114,7 +114,7 @@ const About = () => {
                 <i className="fa-regular fa-globe"></i>
               </div>
               <div className={`${cx("About__Content--Element-Text")} ${"col l-10 m-10 c-10 "}`}>
-                <a className={`${cx("About__Content--Element-Link")} ${""}`} href={dataAbout.website}>hoangha-mycv.netlify.app</a>
+                <a className={`${cx("About__Content--Element-Link")} ${""}`} href={dataAbout.website}>{dataAbout.website}</a>
               </div>
             </div>
           </div>
