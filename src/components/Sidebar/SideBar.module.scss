@@ -40,6 +40,23 @@
                     transition: all 0.5s ease-in-out;
                 }
             }
+            @media (max-width: 545px) {
+                font-size: 2rem;
+
+                .SideBar__Header--Icon-Close {
+                    i {
+                        font-size: 2rem;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+            @media (max-width: 440px) {
+                font-size: 1.8rem;
+            }
         }
 
         .SideBar__Content {
@@ -65,6 +82,10 @@
                 justify-content: flex-start;
                 align-items: center;
                 padding-left: 20px;
+
+                @media (max-width: 545px) {
+                    font-size: 2rem;
+                }
             }
 
             &:hover {

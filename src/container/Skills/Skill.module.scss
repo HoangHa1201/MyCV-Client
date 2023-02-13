@@ -37,7 +37,7 @@
                 .Skill__Content--Item--Box {
                     width: 90%;
                     background-color: var(--lightTone-Color);
-                    min-height: 245px;
+                    min-height: 270px;
                     padding-bottom: 10px;
                     .Skill__Content--Item--Title {
                         width: 100%;
@@ -73,6 +73,9 @@
                             font-weight: 300;
                             margin-right: 10px;
                         }
+                    }
+                    @media (max-width: 740px) {
+                        min-height: 90px;
                     }
                 }
 

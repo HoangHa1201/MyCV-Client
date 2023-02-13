@@ -40,8 +40,12 @@ const About = () => {
         <div className={`${cx("About__Content--Primary")} ${"col l-4 m-5 c-10"}`}>
 
           <div className={`${cx("About__Content--Text")} ${"row"}`}>
-            <h1>Định Hướng</h1>
-            {dataAbout.content}
+            <h1>Về bản thân</h1>
+            {
+              dataAbout.content !== undefined ? dataAbout.content.split('.').map((item, index) => {
+                return item !== "" ? <p key={index}>{item}.</p> : null
+              }) : null
+            }
           </div>
           <a href={dataAbout.linkCV} target="_blank" rel="noreferrer" >
             <div className={`${cx("About__Content--CV")} ${"row"}`}>
@@ -110,7 +114,7 @@ const About = () => {
                 <i className="fa-regular fa-globe"></i>
               </div>
               <div className={`${cx("About__Content--Element-Text")} ${"col l-10 m-10 c-10 "}`}>
-                <a className={`${cx("About__Content--Element-Link")} ${""}`} href={dataAbout.website}>{dataAbout.website}</a>
+                <a className={`${cx("About__Content--Element-Link")} ${""}`} href={dataAbout.website}>hoangha-mycv.netlify.app</a>
               </div>
             </div>
           </div>

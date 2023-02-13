@@ -121,7 +121,7 @@ const Header = () => {
               dataImg.map((item, index) => {
                 if (item.title !== "BackgroundImg") {
                   return (
-                    <div className={`${cx("headerContent__text--img")} ${"col l-1 m-1 c-1"}`} key={index}
+                    <div className={`${cx("headerContent__text--img")} ${"col l-1 m-1"}`} key={index}
 
                     >
                       <img src={item.linkImg} alt={item.title} />
