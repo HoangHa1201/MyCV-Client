@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ApiExp = 'https://mycv-server.onrender.com/api/getAllDataExp';
+const ApiExp = 'https://hoangha-mycv-server.vercel.app/api/getAllDataExp';
 
 export const getAllDataExp = async () => {
     try {

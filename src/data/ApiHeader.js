@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ApiHeader = 'https://mycv-server.onrender.com/api/getAllDataHeader';
+const ApiHeader = 'https://hoangha-mycv-server.vercel.app/api/getAllDataHeader';
 
 export const getAllDataHeader = async () => {
     try {

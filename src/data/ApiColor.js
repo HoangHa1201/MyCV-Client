@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ApiColor = 'https://mycv-server.onrender.com/api/getAllDataColor';
+const ApiColor = 'https://hoangha-mycv-server.vercel.app/api/getAllDataColor';
 
 export const getAllDataColor = async () => {
     try {
